@@ -1,0 +1,7 @@
+Options +FollowSymlinks
+RewriteEngine On
+#this may cause isues with subdirs and so I have not enabled it.
+RewriteBase /example_php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]

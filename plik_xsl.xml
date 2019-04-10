@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml">
+	<xsl:output method="xml" indent="yes" doctype-public="-//W3C//DTD XHTML 1.1//EN" doctype-system="http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"/>
+	<xsl:template match="Książka">
+		<html>
+			<head> 
+				<title>Książka ,,<xsl:value-of select="./id/Tytuł"/>''</title>
+			</head>
+			<body>
+				<xsl:apply-templates/>
+			</body>
+		</html>
+	</xsl:template>
+	
+	<xsl:template match="id">
+		<h3>Dane identyfikacyjne książki</h3>
+		Tytuł: <xsl:value-of select="Tytuł"/><br />
+		ISBN: <xsl:value-of select="isbn"/><br />
+		Autor: <xsl:value-of select="Autor"/><br />
+	</xsl:template>
+	
+	<xsl:template match="SpisTreści">
+		<h3>Spis treści</h3>
+		<table>
+			<xsl:apply-templates/>
+		</table>
+	</xsl:template>
+	
+	<xsl:template match="R">
+		<tr><td><xsl:value-of select="."/></td></tr>
+  </xsl:template>
+</xsl:stylesheet>

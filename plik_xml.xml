@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="plik_xsl.xml"?>
+<Książka>
+  <id>
+    <Tytuł>Pobawmy się w webmasterów</Tytuł>
+    <isbn>123456789</isbn>
+    <Autor>Jeszcze nieznany</Autor>
+  </id>
+  <SpisTreści>
+    <R>Rozdział 1</R>
+    <R>Rozdział 2</R>
+    <R>Rozdział 3</R>
+  </SpisTreści>
+</Książka>

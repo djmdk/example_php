@@ -1,0 +1,31 @@
+0) ADD NEW PROJECT:
+
+- run: console
+- type: cd \
+- type: cd "users"
+- type: cd "HP test"
+- type: symfony new my_project_name
+- type: composer create-project symfony/framework-standard-edition my_project_name
+- pass: ThisTokenIsNotSoSecretChangeIt
+- pass: symfony_bot
+
+1) TO SHOW WEB INTO BROWSER:
+
+- run: console
+- type: cd "HP test"
+- type: cd my-project
+- type: php bin/console server:run 
+
+http://localhost:8000/example/contact
+
+2) REPAIR:
+
+- run: console
+- type: cd "HP test"
+- type: cd my-project
+- type: composer update
+
+
+3) Tworzy autload.php: composer dump-autoload
+
+4) Przetwarza plik composer.json: composer update

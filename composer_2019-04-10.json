@@ -1,0 +1,17 @@
+{
+	"autoload":
+	{
+		"psr-4":
+		{
+			"src\\": "src"
+		}
+	},
+	"require":
+	{
+		"imagine/imagine": "~0.5.0"
+	},
+	"require":
+	{
+		"elasticsearch/elasticsearch": "~6.0"
+	}
+}

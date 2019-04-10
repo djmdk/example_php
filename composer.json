@@ -1,0 +1,20 @@
+{
+	"autoload":
+	{
+		"psr-4":
+		{
+			"src\\": "src"
+		}
+	},
+	"require":
+	{
+		"elasticsearch/elasticsearch": "~6.0"
+	},
+	"repositories":
+	[
+        {
+            "type": "svn",
+            "url": "https://github.com/djmdk/example_php.git"
+        }
+    ]
+}
